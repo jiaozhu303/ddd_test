@@ -1,9 +1,9 @@
 package com.lenovo.ddd.dto;
 
-import com.google.common.collect.Maps;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -14,22 +14,20 @@ import java.util.Map;
 public class ParkingLot {
 
 
-    private static Map<Integer, Car> location = Maps.newHashMap();
+    private Map<Ticket, Car> location = new HashMap<>(10);
 
-    static {
-        for (int i = 1; i <= 10; i++) {
-            location.put(i, null);
-        }
+
+    public Ticket parking(Car car) {
+        Ticket ticket = new Ticket();
+        location.put(ticket, car);
+
+        return ticket;
     }
 
 
-    private ParkUpCarDTO parking(Car car) {
+    public Car parkUp(Ticket ticket) {
         return null;
     }
 
-
-    private ParkUpCarDTO parkUp(String ticket) {
-        return null;
-    }
 
 }
