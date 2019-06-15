@@ -31,28 +31,26 @@ public class DddApplicationTests {
 
     @Test
     public void should_parking_fail_when_park_a_car_given_a_car_and_parking_lot_and_no_location() {
-
+        Car car = new Car();
+        ParkingLot parkingLot = new ParkingLot(0);
+        Ticket parking = parkingLot.parking(car);
+        Assert.assertNull(parking);
     }
 
     @Test
-    public void should_parking_up_success_when_park_up_a_car_given_a_car_and_parking_lot_and_has_a_valid_ticket() {
-
+    public void should_parking_up_success_when_park_up_a_car_given_a_car_and_parking_lot_and_has_a_ticket() {
+        Ticket ticket = new Ticket();
+        ParkingLot parkingLot = new ParkingLot();
+        Car car = parkingLot.parkUp(ticket);
+        Assert.assertNotNull(car);
     }
 
     @Test
     public void should_parking_up_fail_when_park_up_a_car_given_a_car_and_parking_lot_and_has_no_ticket() {
-
+        ParkingLot parkingLot = new ParkingLot();
+        Car car = parkingLot.parkUp(null);
+        Assert.assertNull(car);
     }
 
-    @Test
-    public void should_parking_up_fail_when_park_up_a_car_given_a_car_and_parking_lot_and_has_a_invalid_ticket() {
-
-    }
-
-
-    @Test
-    public void should_parking_fail_when_park_up_a_cart_duplication_given_a_car_and_parking_lot_and_has_a_valid_ticket() {
-
-    }
 
 }
