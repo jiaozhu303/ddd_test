@@ -3,9 +3,6 @@ package com.lenovo.ddd.dto;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @author zhaodj5
  */
@@ -13,13 +10,11 @@ import java.util.Map;
 @NoArgsConstructor
 public class ParkingLot {
 
-
-    private Map<Ticket, Car> location = new HashMap<>(10);
-
+    private Integer locations = 10;
 
     public Ticket parking(Car car) {
         Ticket ticket = new Ticket();
-        location.put(ticket, car);
+        --this.locations;
 
         return ticket;
     }
@@ -28,6 +23,5 @@ public class ParkingLot {
     public Car parkUp(Ticket ticket) {
         return null;
     }
-
 
 }

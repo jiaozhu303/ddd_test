@@ -22,9 +22,9 @@ public class DddApplicationTests {
     public void should_parking_success_and_get_a_ticket_when_park_a_car_given_a_car_and_parking_lot_and_location() {
         Car car = new Car();
         ParkingLot parkingLot = new ParkingLot();
-
+        Assert.assertTrue(parkingLot.getLocations() <= 10 && parkingLot.getLocations() > 0);
         Ticket parking = parkingLot.parking(car);
-
+        Assert.assertEquals(9, (int) parkingLot.getLocations());
         Assert.assertNotNull(parking);
 
     }
