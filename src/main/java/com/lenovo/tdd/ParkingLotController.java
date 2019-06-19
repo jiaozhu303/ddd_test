@@ -1,4 +1,4 @@
-package com.lenovo.ddd;
+package com.lenovo.tdd;
 
 import org.springframework.web.bind.annotation.RestController;
 

@@ -1,13 +1,13 @@
-package com.lenovo.ddd;
+package com.lenovo.tdd;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DddApplication {
+public class TddApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DddApplication.class, args);
+		SpringApplication.run(TddApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.lenovo.ddd;
+package com.lenovo.tdd;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

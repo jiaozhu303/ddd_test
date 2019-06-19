@@ -1,15 +1,15 @@
-package com.lenovo.ddd;
+package com.lenovo.tdd;
 
-import com.lenovo.ddd.dto.Car;
-import com.lenovo.ddd.dto.ParkingLot;
-import com.lenovo.ddd.dto.Ticket;
+import com.lenovo.tdd.dto.Car;
+import com.lenovo.tdd.dto.ParkingLot;
+import com.lenovo.tdd.dto.Ticket;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class DddApplicationTests {
+public class TddApplicationTests {
 
     @Test
     public void contextLoads() {

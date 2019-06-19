@@ -1,4 +1,4 @@
-package com.lenovo.ddd.dto;
+package com.lenovo.tdd.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

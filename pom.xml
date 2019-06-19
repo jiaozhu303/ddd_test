@@ -11,7 +11,7 @@
 	<groupId>com.lenovo</groupId>
 	<artifactId>ddd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ddd</name>
+	<name>tdd</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

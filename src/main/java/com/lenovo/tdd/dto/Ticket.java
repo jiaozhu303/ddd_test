@@ -1,4 +1,4 @@
-package com.lenovo.ddd.dto;
+package com.lenovo.tdd.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @NoArgsConstructor
-public class Car {
+public class Ticket {
 
 
 }
